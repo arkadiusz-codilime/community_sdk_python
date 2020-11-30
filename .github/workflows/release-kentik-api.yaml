@@ -1,0 +1,14 @@
+---
+name: release-kentik-api
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - id: test-1
+      run: echo "test"
